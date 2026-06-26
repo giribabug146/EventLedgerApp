@@ -48,12 +48,6 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>account-service</artifactId>
-            <version>${project.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>mockwebserver</artifactId>
             <version>4.12.0</version>

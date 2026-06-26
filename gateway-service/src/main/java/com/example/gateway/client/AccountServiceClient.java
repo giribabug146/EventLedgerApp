@@ -22,8 +22,8 @@ public class AccountServiceClient {
 
     public AccountServiceClient(RestTemplateBuilder builder, @Value("${account-service.base-url}") String baseUrl) {
         this.restTemplate = builder
-                .connectTimeout(Duration.ofSeconds(1))
-                .readTimeout(Duration.ofSeconds(2))
+                .setConnectTimeout(Duration.ofSeconds(1))
+                .setReadTimeout(Duration.ofSeconds(2))
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, "application/json")
                 .build();
         this.baseUrl = baseUrl;
